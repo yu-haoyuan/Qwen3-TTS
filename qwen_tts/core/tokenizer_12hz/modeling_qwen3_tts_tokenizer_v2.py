@@ -472,7 +472,7 @@ class Qwen3TTSTokenizerV2DecoderTransformerLayer(GradientCheckpointingLayer):
 
 
 @auto_docstring
-class Qwen3TTSTokenizerV2DecoderTransformerModel(Qwen3TTSTokenizerV2DecoderPreTrainedModel):
+class Qwen3TTSTokenizerV2DecoderTransformerModel(Qwen3TTSTokenizerV2DecoderPreTrainedModel): #window transformer
     _can_record_outputs = {
         "hidden_states": Qwen3TTSTokenizerV2DecoderTransformerLayer,
         "attentions": Qwen3TTSTokenizerV2DecoderAttention,
